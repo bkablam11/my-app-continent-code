@@ -1,0 +1,19 @@
+{
+    "Continents":[
+        
+    {"id":1, "code": "AF", "name": "Africa"},
+
+    {"id":2, "code": "NA", "name": "North America"},
+
+    {"id":3, "code": "OC", "name": "Oceania"},
+
+    {"id":4, "code": "AN", "name": "Antarctica"},
+
+    {"id":5, "code": "AS", "name": "Asia"},
+
+    {"id":6, "code": "EU", "name": "Europe"},
+
+    {"id":7, "code": "SA", "name": "South America"}
+
+    ]
+}

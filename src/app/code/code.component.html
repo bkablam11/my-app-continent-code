@@ -1,0 +1,45 @@
+<h1>Dashboard</h1>
+
+<nav class="navbar">
+
+    <input 
+        class="form-control" 
+        type="text" 
+        name="name"
+        [(ngModel)]="name"
+        (ngModelChange)="Search()"
+        placeholder="Enter your code or country name"
+        
+    />
+
+
+</nav>
+
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Code id</th>
+            <th>Code</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+
+
+    <tbody>
+        <tr *ngFor="let code of codes | paginate:{itemsPerPage:5, currentPage:p}" >
+            <td>{{code.id}}</td>
+            <td>{{code.code}}</td>
+            <td>{{code.name}} </td>
+
+
+        </tr>
+
+        
+        <pagination-controls (pageChange)="p=$event" ></pagination-controls>
+
+
+    </tbody>
+
+</table>
